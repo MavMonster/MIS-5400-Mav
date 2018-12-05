@@ -35,7 +35,7 @@ if __name__ == '__main__':
 import pyodbc
 import csv
 
-connection_string = 'Driver={ODBC Driver 17 for SQL Server};Server=mis5400project.database.windows.net,1433;Database=MIS5400Project;Uid=MavMonster@mis5400project;Pwd=Jm1bk32f*1;'
+connection_string = 'Driver={ODBC Driver 17 for SQL Server};Server=mis5400project.database.windows.net,1433;Database=MIS5400Project;Uid=MavMonster@mis5400project;Pwd=*********;'
 conn = pyodbc.connect(connection_string,autocommit=True)
 curs = conn.cursor()
 
@@ -126,7 +126,7 @@ import pyodbc
 from flask import Flask, g, render_template, abort, request
 import json
 
-connection_string = 'Driver={ODBC Driver 17 for SQL Server};Server=mis5400project.database.windows.net,1433;Database=MIS5400Project;Uid=MavMonster@mis5400project;Pwd=Jm1bk32f*1;'
+connection_string = 'Driver={ODBC Driver 17 for SQL Server};Server=mis5400project.database.windows.net,1433;Database=MIS5400Project;Uid=MavMonster@mis5400project;Pwd=**********;'
 
 #setup flask
 app = Flask(__name__)
